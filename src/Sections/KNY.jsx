@@ -19,8 +19,9 @@ export default function KNY() {
   useEffect(() => {
     setPlayer(new Plyr("#player"))
     const videoSource = document.getElementById('video-source');
-    videoSource.src = capitulosKny[currentVideo].url;
-  },[setPlayer, capitulosKny, currentVideo])
+    videoSource.src = capitulosKny.url;
+
+  }, [capitulosKny])
 
   const handleVideo = (i) => {
     player.destroy()
