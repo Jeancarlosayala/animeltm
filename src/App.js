@@ -14,7 +14,8 @@ function App() {
 
         <Switch>
 
-        <Route exatc path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route path="/kimetsunoyaiba" />
 
         </Switch>
 
