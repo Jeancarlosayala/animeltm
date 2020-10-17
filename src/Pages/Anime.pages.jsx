@@ -6,7 +6,7 @@ function Anime({ id, img, link, anime, history }) {
   return (
     <div>
       
-      <a key={id} href="" onClick={() => history.push(`${link}`)}>
+      <a key={id} href={link} onClick={() => history.push(`${link}`)}>
         <img key={id} className="img-fluid caratulas " loading="lazy" src={img} alt="" />
       </a>
       
