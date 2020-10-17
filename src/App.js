@@ -6,6 +6,9 @@ import './App.css';
 import Nav from './Components/Nav.component';
 import Home from './Pages/Home.pages';
 
+//Sections
+import KNY from './Sections/KNY';
+
 function App() {
   return (
     <Fragment>
@@ -15,7 +18,7 @@ function App() {
         <Switch>
 
         <Route exact path="/" component={Home} />
-        <Route path="/kimetsunoyaiba" />
+        <Route path="/kimetsunoyaiba" component={KNY} />
 
         </Switch>
 
