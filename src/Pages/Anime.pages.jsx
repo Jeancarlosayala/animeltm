@@ -1,14 +1,14 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 
 function Anime({ id, img, link, anime, history }) {
 
   return (
     <div>
       
-      <a key={id} href={link} onClick={() => history.push(`${link}`)}>
+      <Link key={id} to={link}>
         <img key={id} className="img-fluid caratulas " loading="lazy" src={img} alt="" />
-      </a>
+      </Link>
       
       <div className="text-center">
         <h6> {anime} </h6>
