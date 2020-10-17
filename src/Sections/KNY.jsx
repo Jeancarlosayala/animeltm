@@ -20,7 +20,7 @@ export default function KNY() {
     setPlayer(new Plyr("#player"))
     const videoSource = document.getElementById('video-source');
     videoSource.src = capitulosKny[currentVideo].url;
-  },[])
+  },[setPlayer, capitulosKny, currentVideo])
 
   const handleVideo = (i) => {
     player.destroy()
