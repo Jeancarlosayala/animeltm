@@ -5,9 +5,7 @@ import './App.css';
 
 import Nav from './Components/Nav.component';
 import Home from './Pages/Home.pages';
-
-//Sections
-import KNY from './Sections/KNY';
+import Capitulos from './Pages/Capitulos.pages';
 
 function App() {
   return (
@@ -18,7 +16,7 @@ function App() {
         <Switch>
 
         <Route exact path="/" component={Home} />
-        <Route path="/kimetsunoyaiba" component={KNY} />
+        <Route  path="/:anime" component={Capitulos} />
 
         </Switch>
 

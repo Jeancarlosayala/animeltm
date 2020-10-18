@@ -1,75 +1,50 @@
-import React, { useState, useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import React, { Fragment, useState } from 'react'
 
 import capKny from '../Json/kny.json'
+import Scroll from '../Components/ScrollUp.component'
 
-import Plyr from "plyr";
-import "plyr/dist/plyr.css";
+import CapitulosAnime from './capitulosKny'
 
 
 export default function KNY() {
-  const location = useLocation()
-  console.log(location);
 
-  const [capitulosKny] = useState(capKny)
-
-  const [currentVideo, setCurrentVideo] = useState(0)
-  const [player, setPlayer] = useState(null)
-
-  useEffect(() => {
-    setPlayer(new Plyr("#player"))
-    const videoSource = document.getElementById('video-source');
-    videoSource.src = capitulosKny[currentVideo].url;
-
-  }, [])
-
-  const handleVideo = (i) => {
-    player.destroy()
-    setCurrentVideo(i)
-    setPlayer(new Plyr("#player"))
-    const videoSource = document.getElementById('video-source');
-    videoSource.src = capitulosKny[i].url;
-  }
+  const [capitulos] = useState(capKny)
 
 
 
   return (
-    <div>
-      <div className="card shadow mb-3">
-        <header className="card-header">
-          <h5 className="card-title mb-0">Kimetsu No Yaiba</h5>
-        </header>
 
-        <div className="col-12 col-md-12">
-          <video id="player" playsInline controls data-poster="." style={{ minHeight: '50vh' }}>
-            <source id="video-source" type="video/mp4" />
-          </video>
-        </div>
+    <Fragment>
+      <div>
+        <Scroll />
 
-        <div className="card-body">
-          <div className="row">
-            <div className="col-12 col-md-12">
-              <aside className="list-group">
-                {
-                  capitulosKny.map((video, i) => {
-                    return (
-                      <button
-                        key={i}
-                        className={`list-group-item list-group-item-action ${i === currentVideo && 'list-group-item-primary'}`}
-                        onClick={() => {
-                          i !== currentVideo && handleVideo(i)
-                        }}>
-                        Capitulo {video.id}
-                      </button>
-                    )
-                  })
-                }
-              </aside>
+      </div>
+
+      <div id="capAnime" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div id="capAnime" className="carousel slide" data-ride="carousel" data-interval="false">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <img src="https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/KNY.jpg?alt=media&token=3e3e8eac-8374-4c8a-b48b-be00d02a112a" alt="" />
             </div>
-
+            
+              {
+                capitulos.map(({ id, ...otherPropsCollections}) => (
+                  <CapitulosAnime key={id} {...otherPropsCollections} />
+                ))
+              }
           </div>
         </div>
+
+        <a class="carousel-control-prev"   href="#capAnime" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon"  aria-hidden="true"></span>
+          <span class="sr-only" style={{background: "#000"}}>Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#capAnime" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </div>
+
+    </Fragment>
   )
 }

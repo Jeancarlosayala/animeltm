@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "url": "https://drive.google.com/file/d/16IM0WUcOZk6Q2dekGzMeFz6siPIFtK8N/preview",
+    "temporada": "Temporada 1",
+    "capitulo": 1
+  },
+  {
+    "id": 2,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F02.mp4?alt=media&token=34e2a3c5-aaa8-4b87-9686-446d4bb36a7e",
+    "temporada": "Temporada 1",
+    "capitulo": 2
+  },
+  {
+    "id": 3,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F03.mp4?alt=media&token=1540050c-0070-4d6a-8dc2-74441a5bab2d",
+    "temporada": "Temporada 1",
+    "capitulo": 3
+  },
+  {
+    "id": 4,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F04.mp4?alt=media&token=b345ce80-5bdf-408c-94de-37f2e7bee060",
+    "temporada": "Temporada 1",
+    "capitulo": 4
+  },
+  {
+    "id": 5,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F05.mp4?alt=media&token=17226e50-8083-4c4a-b77e-84bd15b5a021",
+    "temporada": "Temporada 1",
+    "capitulo": 5
+  },
+  {
+    "id": 6,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F06.mp4?alt=media&token=bc7cf9e3-9377-4907-a921-0d36134a99b2",
+    "temporada": "Temporada 1",
+    "capitulo": 6
+  },
+  {
+    "id": 7,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F07.mp4?alt=media&token=c534bfab-58c8-4de2-956d-7fb6dfb622cd",
+    "temporada": "Temporada 1",
+    "capitulo": 7
+  },
+  {
+    "id": 8,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F08.mp4?alt=media&token=677c64df-d4f8-4c8d-89c4-9c36521f4e77",
+    "temporada": "Temporada 1",
+    "capitulo": 8
+  },
+  {
+    "id": 9,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F09.mp4?alt=media&token=a4facf2e-37c6-47bd-8047-c3a2d69988fb",
+    "temporada": "Temporada 1",
+    "capitulo": 9
+  },
+  {
+    "id": 10,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F10.mp4?alt=media&token=f1327dbb-23e9-44dd-950c-3e130bbf9275",
+    "temporada": "Temporada 1",
+    "capitulo": 10
+  },
+  {
+    "id": 11,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F11.mp4?alt=media&token=6e4a66a4-26cb-4861-9f48-f55825eca1b9",
+    "temporada": "Temporada 1",
+    "capitulo": 11
+  },
+  {
+    "id": 12,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F12.mp4?alt=media&token=674045fc-2523-41d8-8aad-5e293debbf9e",
+    "temporada": "Temporada 1",
+    "capitulo": 12
+  },
+  {
+    "id": 13,
+    "url": "https://firebasestorage.googleapis.com/v0/b/peliculas-2918f.appspot.com/o/boku%20no%20hero%2F13.mp4?alt=media&token=4b71c56b-6596-482c-98b2-daabfc4146dd",
+    "temporada": "Temporada 1",
+    "capitulo": 13
+  }
+]
