@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import caratulasList from '../Json/caratulas.json'
+import caratulasList from '../Json/caratulas'
 
-import '../Styles/Home.styles.css'
-import Anime from '../Pages/Anime.pages'
+import '../Styles/Caratulas.styles.scss'
+import Anime from './Anime.pages'
 
 export default function Caratulas() {
 

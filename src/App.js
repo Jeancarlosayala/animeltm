@@ -6,6 +6,7 @@ import './App.css';
 import Nav from './Components/Nav.component';
 import Home from './Pages/Home.pages';
 import Capitulos from './Pages/Capitulos.pages';
+import SectionAnime from './Pages/SectionAnime.pages';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Switch>
 
         <Route exact path="/" component={Home} />
-        <Route  path="/:anime" component={Capitulos} />
+        <Route exact path="/anime" component={SectionAnime} />
+        <Route  path="/anime/:anime" component={Capitulos} />
 
         </Switch>
 
