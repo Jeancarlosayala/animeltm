@@ -1,22 +1,60 @@
 import React, { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Animes from '../Json/capitulos'
 
+import Animes from '../Json/capitulos'
+import infoAnime from '../Json/infoAnime'
+
+import Scroll from '../Components/ScrollUp.component'
+import '../Styles/Capitulos.styles.scss'
 
 export default function Capitulos(props) {
 
   const nameAnime = props.match.params.anime
+
   const animes = Animes
+  const iAnime = infoAnime
+
+
 
   const [videoAnime, setVideoAnime] = useState(animes[nameAnime][0].url)
-  const [titulo, setTitle] = useState(animes[nameAnime].title)
+  const [infAnime] = useState(iAnime[nameAnime][0])
 
   const renderVideo = () => {
     return (
       <div>
 
         <div className="embed-responsive embed-responsive-16by9">
-          <iframe src={`//drive.google.com/file/d/${videoAnime}/preview`} className="embed-responsive-item" allowFullScreen></iframe>
+          <iframe title={animes[nameAnime].title} src={`//drive.google.com/file/d/${videoAnime}/preview`} className="embed-responsive-item" allowFullScreen></iframe>
+        </div>
+      </div>
+    )
+  }
+
+  const renderInfo = () => {
+    return (
+      <div>
+        <div id="resumenAnime" className="carousel slide" data-ride="carousel" data-interval="false">
+
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+
+              <img src={infAnime.portada} className="img-fluid" alt=""/>
+
+              <div className="carousel-caption d-none d-lg-block sinopsis">
+                <div className="row mx-auto mt-4 mb-4">
+                  <div className="col-12 col-md-6">
+                    <img src={infAnime.img} className="img-fluid" alt="" />
+                  </div>
+                  <div className="col-12 col-md-6 ml-auto">
+                    <h5> {infAnime.name} </h5>
+                    <p> {infAnime.sinopsis} </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
     )
@@ -25,21 +63,22 @@ export default function Capitulos(props) {
   return (
     <div>
       <Fragment>
-        <div className="card-header">
-          <h5 className="card-title"> {titulo} </h5>
-        </div>
-        
-        <div className="row mx-auto mt-4">
-          <div className="col-12 col-md-6 ">
+        <Scroll />
+
+
+        {renderInfo()}
+
+        <div className="mt-4">
+          <div className=" mx-auto col-12 col-md-7 ">
             {renderVideo()}
           </div>
-          <div className="col-12 col-md-6 mt-4">
+          <div className=" mx-auto col-12 col-md-7 mt-4">
             <div className="card">
               {
                 animes[nameAnime].map(item => {
-                  return <Link to="#" activeClassName="" style={{background: "#000"}}  className="btn btn-light" onClick={() => {
+                  return <Link key={item.id} to="#" style={{ background: "#000" }} className="btn btn-light capitulos" onClick={() => {
                     setVideoAnime(item.url)
-                  }}> <h6 style={{color: '#fff'}}>Capitulo {item.capitulo}</h6> </Link>
+                  }}> <h6 style={{ color: '#fff' }}>Capitulo {item.capitulo} </h6> </Link>
                 })
               }
             </div>

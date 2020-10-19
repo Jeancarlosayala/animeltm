@@ -24,7 +24,7 @@ const Scroll = () => {
 
   return (
     <div className="scroll-to-top cursor-pointer text-center" onClick={scrollToTop}>
-      <i class="icon fas fa-chevron-up"></i>
+      <i className="icon fas fa-chevron-up"></i>
     </div>
   )
 }

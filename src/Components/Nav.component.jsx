@@ -6,7 +6,7 @@ const Nav = () => (
   <div>
     <nav className="navbar navbar-expand-lg">
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#BarraNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
+        <i  className="fas fa-bars"></i>
       </button>
 
       <div className="collapse navbar-collapse" id="BarraNav">
