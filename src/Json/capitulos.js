@@ -353,9 +353,129 @@ const Animes = {
   ],
   boku_no_hero_academia_s3:[
     {
-      id: "",
-      url: "",
-      capitulo: ""
+      id: "1",
+      url: "1X1SPfGVL0oejAC3x61NJ3QR3dxl3w8aA",
+      capitulo: "1"
+    },
+    {
+      id: "2",
+      url: "1fDYMQsMMLfINBA_wCH-NXdRXJ0lM-iBh",
+      capitulo: "2"
+    },
+    {
+      id: "3",
+      url: "1z7BnRKIGQUH0aLDSKd53_5j2weWjZB3I",
+      capitulo: "3"
+    },
+    {
+      id: "4",
+      url: "1hACwf3Mm3B4sTW-Y477Yq-S-liYJX0W6",
+      capitulo: "4"
+    },
+    {
+      id: "5",
+      url: "18FW8JUAeGtt3NtXkL4Xj8iZs18UBZwm7",
+      capitulo: "5"
+    },
+    {
+      id: "6",
+      url: "1uHBjg_0sOvnrEnwQ62CScb_cdelG4KEl",
+      capitulo: "6"
+    },
+    {
+      id: "7",
+      url: "1891jk9xyNidxpgNRXDenkIwRVXKU_0mK",
+      capitulo: "7"
+    },
+    {
+      id: "8",
+      url: "1AvwSU09tHooeCH-4rtAqPbhQHqj-ddQ5",
+      capitulo: "8"
+    },
+    {
+      id: "9",
+      url: "1tLS4pZ122oj1SJLWyIiMX1XU5S1oz1Di",
+      capitulo: "9"
+    },
+    {
+      id: "10",
+      url: "1PlBjYndi2BMGDh187Lu4E5DHG8aAbcr6",
+      capitulo: "10"
+    }
+    ,{
+      id: "11",
+      url: "16_BaxUkaaItwboki5KE_YQFLe95xD9kY",
+      capitulo: "11"
+    },
+    {
+      id: "12",
+      url: "1m3ux8TWIidUZQMT4dtO9e_FlpCyHjxlu",
+      capitulo: "12"
+    },
+    {
+      id: "13",
+      url: "1WK_LZ8NsgOGuziJMNQpYIprKAl4MYxTo",
+      capitulo: "13"
+    },
+    {
+      id: "14",
+      url: "11Qji9OFKP00APgaiFdO6jvc_2WwhlkZw",
+      capitulo: "14"
+    },
+    {
+      id: "15",
+      url: "1rlbsiM7Xmrpvat96njUQybZTx__p6o29",
+      capitulo: "15"
+    },
+    {
+      id: "16",
+      url: "1KAXqcriFJs8EL2Cd2VNi-XWcOBOh90DO",
+      capitulo: "16"
+    },
+    {
+      id: "17",
+      url: "1ELpglblQyaVzJkbWMcjtni4MsKixYrbX",
+      capitulo: "17"
+    },
+    {
+      id: "18",
+      url: "1dkL88qPUv4f2McV6X8WioxeDj5M1u8Gz",
+      capitulo: "18"
+    },
+    {
+      id: "19",
+      url: "1ByNkdhBEkthtz5wnzwHpb9PKCUHvx5mn",
+      capitulo: "19"
+    },
+    {
+      id: "20",
+      url: "11xoQsnTsEFISyfLuhyMTZizfSjbISUom",
+      capitulo: "20"
+    },
+    {
+      id: "21",
+      url: "1aIrlh3lrSWGH-92LvF7ra0WhtoMC_tfc",
+      capitulo: "21"
+    },
+    {
+      id: "22",
+      url: "1Zt4yZSidQEi_oTu9y-teYhWREXCe-dfP",
+      capitulo: "22"
+    },
+    {
+      id: "23",
+      url: "1pvV8eOQ8idKIHT6D5hbNrDpF3PAWcNpS",
+      capitulo: "23"
+    },
+    {
+      id: "24",
+      url: "1rXDYEk_COVzywtFWbCyx2DTFvIe6V97E",
+      capitulo: "24"
+    },
+    {
+      id: "25",
+      url: "1bUNpUpykiEktUbtf81p2wbxb0-ti6o-g",
+      capitulo: "25"
     }
   ]
 }

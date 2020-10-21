@@ -21,10 +21,16 @@ export default function Capitulos(props) {
   const renderVideo = () => {
     return (
       <div>
-        <h5 style={{ color: "#fff" }}> Capitulo {capAnime} </h5>
+        <h5 className="d-block d-md-none" style={{ color: "#fff" }}> Capitulo {capAnime} {infAnime.status === "completo" ?
+          (<span className="badge badge-success"> {infAnime.status}</span>) :
+          infAnime.status === "incompleto" ? (<span className="badge badge-warning"> {infAnime.status} </span>) :
+            (<span className="badge badge-primary"> {infAnime.status} </span>)}
+        </h5>
+
+        <h5 className="d-none d-md-block" style={{color: "#fff"}}>Capitulo {capAnime} </h5>
 
         <div className="embed-responsive embed-responsive-16by9">
-          <iframe title="{animes[nameAnime].title}" src={`//drive.google.com/file/d/${videoAnime}/preview`} className="embed-responsive-item" allowFullScreen></iframe>
+          <iframe title="Animet" src={`//drive.google.com/file/d/${videoAnime}/preview`} className="embed-responsive-item" allowFullScreen></iframe>
         </div>
       </div>
     )
@@ -52,7 +58,7 @@ export default function Capitulos(props) {
                     <h5> {infAnime.name} {infAnime.status === "completo" ?
                       (<span className="badge badge-success"> {infAnime.status}</span>) :
                       infAnime.status === "incompleto" ? (<span className="badge badge-warning"> {infAnime.status} </span>) :
-                      (<span className="badge badge-primary"> {infAnime.status} </span>)}
+                        (<span className="badge badge-primary"> {infAnime.status} </span>)}
                     </h5>
                     <p> {infAnime.sinopsis} </p>
                   </div>

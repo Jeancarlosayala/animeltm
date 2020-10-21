@@ -36,7 +36,7 @@ const infoAnime = {
       img: "https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/BNH3.jpg?alt=media&token=992d6fb4-74cd-4bc4-b7d4-fa08ea72d038",
       portada: "https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/Portadas%2FBoku-no-Hero-Academia-3.jpg?alt=media&token=c9a0dc41-0a9c-491c-a193-1d662a5f21a7",
       sinopsis: "",
-      status: "incompleto"
+      status: "completo"
     }
   ],
   name:[
