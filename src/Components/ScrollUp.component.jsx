@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {useWindowScroll} from 'react-use'
-import '../Styles/ScrollUp.styles.css'
+import '../Styles/ScrollUp.styles.scss'
 
 const Scroll = () => {
 

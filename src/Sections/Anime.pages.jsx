@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter, Link } from 'react-router-dom'
 
-function Anime({ id, img, link, anime, match}) {
+function Anime({ id, img, link, anime, match, capitulos}) {
 
   return (
     <div>
@@ -11,7 +11,7 @@ function Anime({ id, img, link, anime, match}) {
       </Link>
       
       <div className="text-center titulo-caratula">
-        <h6> {anime} </h6>
+        <h6> {anime} <span className="badge badge-warning"> {capitulos} Cap </span> </h6>
       </div>
 
     </div>
