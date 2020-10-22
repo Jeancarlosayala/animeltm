@@ -477,6 +477,68 @@ const Animes = {
       url: "1bUNpUpykiEktUbtf81p2wbxb0-ti6o-g",
       capitulo: "25"
     }
+  ],
+  beastars:[
+    {
+      id :"1",
+      url: "1fREiqR6l80IK1J7p21HHwJynarVeuWxA",
+      capitulo: "1"
+    },
+    {
+      id :"2",
+      url: "1uKcSSz4v0SvUaZyYlDRj9MNaNLsxLc0B",
+      capitulo: "2"
+    },
+    {
+      id :"3",
+      url: "1vUCDbajQpAgWg9ipBS_ZAKHM2qSGDjB3",
+      capitulo: "3"
+    },
+    {
+      id :"4",
+      url: "17kjJg2Fm63jSjoSLzpz0OrIQEX6RnoEs",
+      capitulo: "4"
+    },
+    {
+      id :"5",
+      url: "1M_DEx29dT0NGoVJ41MSsE9AX_cE1mrIq",
+      capitulo: "5"
+    },
+    {
+      id :"6",
+      url: "1epojvWKTZadJJDzzieROY6aueLvQ_tdy",
+      capitulo: "6"
+    },
+    {
+      id :"7",
+      url: "1xUDyWehEnpI8YvAEUNPYCTztm9XD02lH",
+      capitulo: "7"
+    },
+    {
+      id :"8",
+      url: "19Ubj4MzpYi56YPP-KBPA6IO_ZvoKWTu6",
+      capitulo: "8"
+    },
+    {
+      id :"9",
+      url: "1nW17z0Iy62ioZHT8QPrI5gd-3JeogNad",
+      capitulo: "9"
+    },
+    {
+      id :"10",
+      url: "13Elfh__h838vE2xrLqeTBD_wIUar4_7n",
+      capitulo: "10"
+    },
+    {
+      id :"11",
+      url: "1XOFmSyuABcoM0Wy-aP5z6k9trHk_88Vd",
+      capitulo: "11"
+    },
+    {
+      id :"12",
+      url: "1Y2kz3Pg58OFG4PjrE-wx7gPN7Cxhmeua",
+      capitulo: "12"
+    }
   ]
 }
 

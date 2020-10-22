@@ -39,6 +39,16 @@ const infoAnime = {
       status: "completo"
     }
   ],
+  beastars:[
+    {
+      id: 1,
+      name: "Beastars",
+      img: "https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/Beastars.jpg?alt=media&token=c1b5a4db-fb32-4dd1-a704-98ca5204ae1e",
+      portada: "https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/Portadas%2FBeastars.jpg?alt=media&token=4a1d447e-065c-48bf-976c-dde9ad68ff7a",
+      sinopsis: "La historia se desarrolla en un mundo de animales antropomórficos con una división cultural entre carnívoros y herbívoros. ... Pero de repente, Tem la alpaca es brutalmente asesinada y devorada en la noche, creando una ola de inquietud y desconfianza entre estudiantes herbívoros y carnívoros.",
+      status: "completo"
+    }
+  ],
   name:[
     {
       id: 1,

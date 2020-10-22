@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import Animes from '../Json/capitulos'
@@ -17,6 +17,10 @@ export default function Capitulos(props) {
   const [videoAnime, setVideoAnime] = useState(animes[nameAnime][0].url)
   const [capAnime, setCapAnime] = useState(animes[nameAnime][0].capitulo)
   const [infAnime] = useState(iAnime[nameAnime][0])
+
+  useEffect(() =>{
+      document.title = `AnimeLTM - ${infAnime.name}`
+  }, [infAnime.name])
 
   const renderVideo = () => {
     return (

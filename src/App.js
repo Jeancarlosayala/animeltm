@@ -12,17 +12,18 @@ import { useLocation } from 'react-use';
 
 function App() {
   const location = useLocation()
-  console.log(location);
+  
+
+
   return (
     <Fragment>
       <Router>
         {
-          location.pathname !== '/anime' ? (<Nav />): null
+          location.pathname !== '/anime' ? (<Nav />) : null
         }
-
-        <Route exact path="/" component={Home} />
-        <Route exact path="/anime" component={SectionAnime} />
-        <Route path="/anime/:anime" component={Capitulos} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/anime" component={SectionAnime} />
+          <Route path="/anime/:anime" component={Capitulos} />
 
       </Router>
     </Fragment>

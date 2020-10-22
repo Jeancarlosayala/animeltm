@@ -27,6 +27,13 @@ const Caratulas =
       anime: "Boku No Hero S3",
       link: "boku_no_hero_academia_s3",
       capitulos: "25"
+    },
+    {
+      id: "5",
+      img: "https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/Beastars.jpg?alt=media&token=c1b5a4db-fb32-4dd1-a704-98ca5204ae1e",
+      anime: "Beastars",
+      link: "beastars",
+      capitulos: "12"
     }
   ]
 

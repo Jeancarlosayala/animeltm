@@ -7,7 +7,7 @@ function Anime({ id, img, link, anime, match, capitulos}) {
     <div>
       
       <Link key={id} to={`${match.url}/${link}`}>
-        <img key={id} className="img-fluid caratulas " loading="lazy" src={img} alt="" />
+        <img key={id} className="img-fluid caratulas mt-3 " loading="lazy" src={img} alt="" />
       </Link>
       
       <div className="text-center titulo-caratula">
