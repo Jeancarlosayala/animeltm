@@ -49,7 +49,7 @@ const infoAnime = {
       status: "completo"
     }
   ],
-  name:[
+  assassination_classroom:[
     {
       id: 1,
       name: "",

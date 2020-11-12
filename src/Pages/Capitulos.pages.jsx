@@ -1,8 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import infoAnime from '../Json/infoAnime'
-
 import Scroll from '../Components/ScrollUp.component'
 import '../Styles/Capitulos.styles.scss'
 
@@ -10,7 +8,7 @@ export default function Capitulos(props) {
 
   const nameAnime = props.match.params.anime
 
-  const iAnime = infoAnime
+  // const iAnime = infoAnime
 
   useEffect(() => {
 
@@ -30,20 +28,20 @@ export default function Capitulos(props) {
   const [fetchAnimes, setFetchAnimes] = useState([])
   const [videoAnime, setVideoAnime] = useState("")
   const [capAnime, setCapAnime] = useState("")
-  const [infAnime] = useState(iAnime[nameAnime][0])
+  // const [infAnime] = useState(iAnime[nameAnime][0])
 
-  useEffect(() =>{
-      document.title = `AnimeLTM - ${infAnime.name}`
-  }, [infAnime.name])
+  // useEffect(() =>{
+  //     document.title = `AnimeLTM - ${infAnime.name}`
+  // }, [infAnime.name])
 
   const renderVideo = () => {
     return (
       <div>
-        <h5 className="d-block d-md-none" style={{ color: "#fff" }}> Capitulo {capAnime} {infAnime.status === "completo" ?
+        {/* <h5 className="d-block d-md-none" style={{ color: "#fff" }}> Capitulo {capAnime} {infAnime.status === "completo" ?
           (<span className="badge badge-success"> {infAnime.status}</span>) :
           infAnime.status === "incompleto" ? (<span className="badge badge-warning"> {infAnime.status} </span>) :
             (<span className="badge badge-primary"> {infAnime.status} </span>)}
-        </h5>
+        </h5> */}
 
         <h5 className="d-none d-md-block" style={{color: "#fff"}}>Capitulo {capAnime} </h5>
 
@@ -54,42 +52,42 @@ export default function Capitulos(props) {
     )
   }
 
-  function renderInfo() {
+  // function renderInfo() {
 
 
 
-    return (
-      <div>
-        <div id="resumenAnime" className="carousel slide" data-ride="carousel" data-interval="false">
+  //   return (
+  //     <div>
+  //       {/* <div id="resumenAnime" className="carousel slide" data-ride="carousel" data-interval="false">
 
-          <div className="carousel-inner">
-            <div className="carousel-item active">
+  //         <div className="carousel-inner">
+  //           <div className="carousel-item active">
 
-              <img src={infAnime.portada} loading="lazy" className="img-fluid" alt="" />
+  //             <img src={infAnime.portada} loading="lazy" className="img-fluid" alt="" />
 
-              <div className="carousel-caption d-none d-lg-block sinopsis">
-                <div className="row mx-auto mt-4 mb-4">
-                  <div className="col-12 col-md-6">
-                    <img src={infAnime.img} loading="lazy" className="img-fluid" alt="" />
-                  </div>
-                  <div className="col-12 col-md-6 ml-auto">
-                    <h5> {infAnime.name} {infAnime.status === "completo" ?
-                      (<span className="badge badge-success"> {infAnime.status}</span>) :
-                      infAnime.status === "incompleto" ? (<span className="badge badge-warning"> {infAnime.status} </span>) :
-                        (<span className="badge badge-primary"> {infAnime.status} </span>)}
-                    </h5>
-                    <p> {infAnime.sinopsis} </p>
-                  </div>
-                </div>
-              </div>
+  //             <div className="carousel-caption d-none d-lg-block sinopsis">
+  //               <div className="row mx-auto mt-4 mb-4">
+  //                 <div className="col-12 col-md-6">
+  //                   <img src={infAnime.img} loading="lazy" className="img-fluid" alt="" />
+  //                 </div>
+  //                 <div className="col-12 col-md-6 ml-auto">
+  //                   <h5> {infAnime.name} {infAnime.status === "completo" ?
+  //                     (<span className="badge badge-success"> {infAnime.status}</span>) :
+  //                     infAnime.status === "incompleto" ? (<span className="badge badge-warning"> {infAnime.status} </span>) :
+  //                       (<span className="badge badge-primary"> {infAnime.status} </span>)}
+  //                   </h5>
+  //                   <p> {infAnime.sinopsis} </p>
+  //                 </div>
+  //               </div>
+  //             </div>
 
-            </div>
-          </div>
+  //           </div>
+  //         </div>
 
-        </div>
-      </div>
-    )
-  }
+  //       </div> */}
+  //     </div>
+  //   )
+  // }
 
   return (
     <div>
@@ -97,7 +95,7 @@ export default function Capitulos(props) {
         <Scroll />
 
 
-        {renderInfo()}
+        {/* {renderInfo()} */}
 
         <div className="mt-4">
           <div className=" mx-auto col-12 col-md-7 ">
