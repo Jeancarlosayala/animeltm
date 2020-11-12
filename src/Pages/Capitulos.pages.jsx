@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import Animes from '../Json/capitulos'
 import infoAnime from '../Json/infoAnime'
 
 import Scroll from '../Components/ScrollUp.component'
@@ -11,11 +10,26 @@ export default function Capitulos(props) {
 
   const nameAnime = props.match.params.anime
 
-  const animes = Animes
   const iAnime = infoAnime
 
-  const [videoAnime, setVideoAnime] = useState(animes[nameAnime][0].url)
-  const [capAnime, setCapAnime] = useState(animes[nameAnime][0].capitulo)
+  useEffect(() => {
+
+    fetch(`https://animes-f1a00.firebaseio.com/animes/items/${nameAnime}.json`)
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        const result = data.map(anime => {
+          return {title: anime.title, url: anime.url, capitulo: anime.capitulo}
+        })
+        setFetchAnimes(result)
+        setVideoAnime(result[0].url)
+        setCapAnime(result[0].capitulo)
+      })
+  }, [nameAnime])
+
+  const [fetchAnimes, setFetchAnimes] = useState([])
+  const [videoAnime, setVideoAnime] = useState("")
+  const [capAnime, setCapAnime] = useState("")
   const [infAnime] = useState(iAnime[nameAnime][0])
 
   useEffect(() =>{
@@ -92,7 +106,7 @@ export default function Capitulos(props) {
           <div className=" mx-auto col-12 col-md-7 mt-4">
             <div className="card">
               {
-                animes[nameAnime].map(item => {
+                fetchAnimes.map(item => {
                   return <Link key={item.id} to="#" style={{ background: "#000" }} className="btn btn-light capitulos" onClick={() => {
                     setVideoAnime(item.url)
                     setCapAnime(item.capitulo)

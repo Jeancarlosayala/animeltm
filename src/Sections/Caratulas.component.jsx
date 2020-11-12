@@ -1,5 +1,4 @@
-import React, { Fragment, useState } from 'react'
-import caratulasList from '../Json/caratulas'
+import React, { Fragment, useState, useEffect  } from 'react'
 import { NavLink } from 'react-router-dom'
 
 import '../Styles/Caratulas.styles.scss'
@@ -7,12 +6,23 @@ import Anime from './Anime.pages'
 
 export default function Caratulas() {
 
-  const [caratulas] = useState(caratulasList)
+
+  const [caratulas, setCaratulas] = useState([])
   const [search, setSearch] = useState('')
 
   const filteredAnimes = caratulas.filter(item => {
     return item.anime.toLowerCase().includes(search.toLowerCase())
   })
+
+  useEffect(() =>{
+    fetch('https://apkpeliculas-c9378.firebaseio.com/caratulas.json')
+      .then(res => res.json())
+      .then(data => {
+        console.log('Caratulas');
+        console.log(data);
+        setCaratulas(data)
+      })
+  }, [])
 
   return (
     <Fragment>
