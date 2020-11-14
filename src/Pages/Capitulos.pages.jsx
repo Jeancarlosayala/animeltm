@@ -15,7 +15,6 @@ export default function Capitulos(props) {
     fetch(`https://animes-f1a00.firebaseio.com/animes/items/${nameAnime}.json`)
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         const result = data.map(anime => {
           return {title: anime.title, url: anime.url, capitulo: anime.capitulo}
         })
