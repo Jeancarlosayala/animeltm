@@ -18,8 +18,6 @@ export default function Caratulas() {
     fetch('https://apkpeliculas-c9378.firebaseio.com/caratulas.json')
       .then(res => res.json())
       .then(data => {
-        console.log('Caratulas');
-        console.log(data);
         setCaratulas(data)
       })
   }, [])

@@ -15,7 +15,6 @@ export default function Capitulos(props) {
     fetch(`https://animes-f1a00.firebaseio.com/animes/items/${nameAnime}.json`)
       .then(res => res.json())
       .then(data => {
-        console.log(data);
         const result = data.map(anime => {
           return {title: anime.title, url: anime.url, capitulo: anime.capitulo}
         })
@@ -46,7 +45,7 @@ export default function Capitulos(props) {
         <h5 className="d-none d-md-block" style={{color: "#fff"}}>Capitulo {capAnime} </h5>
 
         <div className="embed-responsive embed-responsive-16by9">
-          <iframe title="Animet" src={`//drive.google.com/file/d/${videoAnime}/preview`} className="embed-responsive-item" allowFullScreen></iframe>
+          <iframe title="Animet" src={`${videoAnime}/preview`} className="embed-responsive-item" allowFullScreen></iframe>
         </div>
       </div>
     )
