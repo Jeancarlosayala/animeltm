@@ -30,9 +30,9 @@ export default function Capitulos(props) {
   const [capAnime, setCapAnime] = useState("")
   // const [infAnime] = useState(iAnime[nameAnime][0])
 
-  // useEffect(() =>{
-  //     document.title = `AnimeLTM - ${infAnime.name}`
-  // }, [infAnime.name])
+   useEffect(() =>{
+      document.title = `AnimeLTM - ${nameAnime}`
+  }, [nameAnime])
 
   const renderVideo = () => {
     return (
