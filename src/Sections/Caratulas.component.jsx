@@ -64,14 +64,14 @@ export default function Caratulas() {
       <div className=" row mx-auto mt-2 ">
         
         {
-          currentPost.map(({ id, ...otherSectionProps }) => (
+          filteredAnimes.map(({ id, ...otherSectionProps }) => (
             <div key={id} className="col-md-2">
               <Anime key={id} {...otherSectionProps} />
             </div>
           ))
         }
       </div>
-      <Pagination postsPerPage={postsPerPage} totalPost={caratulas.length} paginate={paginate} />
+      {/* <Pagination postsPerPage={postsPerPage} totalPost={caratulas.length} paginate={paginate} /> */}
     </Fragment>
   )
 }
