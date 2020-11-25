@@ -16,7 +16,7 @@ export default function Capitulos(props) {
       .then(res => res.json())
       .then(data => {
         const result = data.map(anime => {
-          return {title: anime.title, url: anime.url, capitulo: anime.capitulo}
+          return { title: anime.title, url: anime.url, capitulo: anime.capitulo }
         })
         setFetchAnimes(result)
         setVideoAnime(result[0].url)
@@ -29,8 +29,8 @@ export default function Capitulos(props) {
   const [capAnime, setCapAnime] = useState("")
   // const [infAnime] = useState(iAnime[nameAnime][0])
 
-   useEffect(() =>{
-      document.title = `AnimeLTM - ${nameAnime}`
+  useEffect(() => {
+    document.title = `AnimeLTM - ${nameAnime}`
   }, [nameAnime])
 
   const renderVideo = () => {
@@ -42,10 +42,10 @@ export default function Capitulos(props) {
             (<span className="badge badge-primary"> {infAnime.status} </span>)}
         </h5> */}
 
-        <h5 className="d-none d-md-block" style={{color: "#fff"}}>Capitulo {capAnime} </h5>
+        <h5 style={{ color: "#fff" }}>Capitulo {capAnime} </h5>
 
         <div className="embed-responsive embed-responsive-16by9">
-          <iframe title="Animet" src={`${videoAnime}/preview`} className="embed-responsive-item" allowFullScreen></iframe>
+          <iframe title="Animet" src={`${videoAnime}/preview`} className="reproductor embed-responsive-item" allowFullScreen ></iframe>
         </div>
       </div>
     )
@@ -96,12 +96,12 @@ export default function Capitulos(props) {
 
         {/* {renderInfo()} */}
 
-        <div className="mt-4">
-          <div className=" mx-auto col-12 col-md-7 ">
+        <div className="row mx-auto mt-4 mb-4">
+          <div className="col-12 col-md-9">
             {renderVideo()}
           </div>
-          <div className=" mx-auto col-12 col-md-7 mt-4">
-            <div className="card">
+          <div className="col-12 col-md-3">
+            <div className="card capitulos-anime">
               {
                 fetchAnimes.map(item => {
                   return <Link key={item.id} to="#" style={{ background: "#000" }} className="btn btn-light capitulos" onClick={() => {

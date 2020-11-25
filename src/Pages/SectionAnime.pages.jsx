@@ -5,7 +5,7 @@ export default function SectionAnime(){
 
   useEffect(() =>{
     document.title = 'AnimeLTM - Anime'
-  })
+  }, [])
 
   return(
     <div>

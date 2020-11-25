@@ -19,6 +19,8 @@ export default function Home() {
       .then(data => {
         setPortadas(data)
       })
+
+    document.title = 'AnimeLTM'
   }, [])
 
   const [secciones, setSecciones] = useState([])
@@ -29,13 +31,13 @@ export default function Home() {
       <div id="secciones" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="img-fluid portada" src="https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/Portadas%2FBeastars.jpg?alt=media&token=4a1d447e-065c-48bf-976c-dde9ad68ff7a" alt="" />
+            <img className="img-fluid portada" loading="lazy" src="https://firebasestorage.googleapis.com/v0/b/apkpeliculas-c9378.appspot.com/o/Portadas%2FBeastars.jpg?alt=media&token=4a1d447e-065c-48bf-976c-dde9ad68ff7a" alt="" />
           </div>
 
           {
             portada.map(portadas => (
               <div className="carousel-item">
-                <img className="img-fluid portada" src={portadas.img} alt="" />
+                <img className="img-fluid portada" loading="lazy" src={portadas.img} alt="" />
               </div>
             ))
           }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 
-function Anime({ id, img, link, anime, match, capitulos}) {
+function Anime({id, img, link, anime, match, capitulos}) {
 
   return (
     <div>
