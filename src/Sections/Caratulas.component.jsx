@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect  } from 'react'
+import React, { Fragment, useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import Pagination from '../Components/Pagination'
 
@@ -12,7 +12,7 @@ export default function Caratulas() {
   const [search, setSearch] = useState('')
 
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(3);
+  const [postsPerPage] = useState(30);
 
   const filteredAnimes = caratulas.filter(item => {
     return item.anime.toLowerCase().includes(search.toLowerCase())
@@ -20,10 +20,11 @@ export default function Caratulas() {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPost = caratulas.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPost = filteredAnimes.slice(indexOfFirstPost, indexOfLastPost);
   const paginate = pageNumber => setCurrentPage(pageNumber)
 
-  useEffect(() =>{
+
+  useEffect(() => {
     fetch('https://apkpeliculas-c9378.firebaseio.com/caratulas.json')
       .then(res => res.json())
       .then(data => {
@@ -62,16 +63,18 @@ export default function Caratulas() {
       </nav>
 
       <div className=" row mx-auto mt-2 ">
-        
+
         {
-          filteredAnimes.map(({ id, ...otherSectionProps }) => (
+          currentPost.map(({ id, ...otherSectionProps }) => (
             <div key={id} className="col-md-2">
               <Anime key={id} {...otherSectionProps} />
             </div>
           ))
         }
       </div>
-      {/* <Pagination postsPerPage={postsPerPage} totalPost={caratulas.length} paginate={paginate} /> */}
+
+      <Pagination postsPerPage={postsPerPage} paginate={paginate} totalPosts={caratulas.length} />
+
     </Fragment>
   )
 }
